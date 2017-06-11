@@ -1,0 +1,23 @@
+<md-grid-list id="list" cols=1 rowHeight="40" gutterSize=10>
+	<md-grid-tile rowspan=2 >
+			<h2>Please login to use my-monsters</h2>
+	</md-grid-tile>
+	<md-grid-tile>
+	    <span class="error" *ngIf="error">{{ error }}</span>
+	</md-grid-tile>
+	<md-grid-tile>
+	  	<button md-raised-button id="google" (click)="loginWithGoogle()">
+	  		<md-icon>face</md-icon>
+	  		LOGIN WITH GOOGLE
+	  	</button>
+	</md-grid-tile>
+	<md-grid-tile>
+  		<button md-raised-button id="email" routerLink="/login-email">
+  			<md-icon>email</md-icon>
+  			LOGIN WITH EMAIL
+  		</button>
+	</md-grid-tile>
+	<md-grid-tile>
+		<a routerLink="/signup" routerLinkActive="active" class="alc">No account? <strong>Create one here</strong></a>
+	</md-grid-tile>
+</md-grid-list>

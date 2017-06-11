@@ -1,0 +1,10 @@
+md-grid-list {
+	background: #f0f0f0;
+	max-width: 500px;
+	margin: auto;
+}
+
+md-grid-tile button {
+	width: 210px;
+	text-align: left;
+}
